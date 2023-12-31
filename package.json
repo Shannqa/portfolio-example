@@ -1,0 +1,37 @@
+{
+  "name": "portfolio-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack",
+    "deploy-gh": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
+    "deploy": "git push origin main && git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
+    "deploy-gh-init": "git push origin && git subtree push --prefix dist origin gh-pages",
+    "pretty": "npx prettier . --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shannqa/portfolio-example.git"
+  },
+  "author": "Shannqa",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "3.0.3",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.13.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
