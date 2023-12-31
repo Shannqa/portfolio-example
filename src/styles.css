@@ -81,6 +81,11 @@ main {
   background-color: white;
 }
 
+article img {
+  height: 300px;
+  width: 300px;
+}
+
 footer {
   background-color: steelblue;
   color: white;
