@@ -168,11 +168,22 @@ a[href^=mailto]::before {
     flex-direction: column;
   }
   .header-photo {
-    width: 100vw;
+    width: 80vw;
+    margin: 0 auto;
     margin-bottom: 1rem;
   }
+
+  #head-img {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+
+  article {
+    width: calc(100vw - 10px);
+  }
   article img {
-    width: 100vw;
+    width: 100%;
   }
 }
 
@@ -180,6 +191,49 @@ a[href^=mailto]::before {
   .projects-list {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .header-content {
+    position: relative;
+    height: 400px;
+    display: block;
+  }
+
+  .header-photo {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .header-photo h1 {
+    position: absolute;
+    top: 0;
+    left: 50px;
+  }
+
+  .header-about {
+    display: block;
+    margin-top: 50px;
+    max-width: 70%;
+    position: absolute;
+    left: 100px;
+  }
+
+  #head-img {
+    width: 150px;
+  }
+
+  .header-space {
+    float: left;
+    width: 90px;
+    height: 100px;
+  }
+
+  article img {
+    width: 250px;
+  }
+
 }
 
 @media screen and (min-width: 769px) {
